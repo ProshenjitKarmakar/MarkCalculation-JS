@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  |---------------------------|
+       |      Meta Tags Here       |
+       |---------------------------| -->
+    <!--turn off IE compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Charecter set -->
+    <meta charset="utf-8">
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1" />
+
+    <!--  |---------------------------|
+       |    Website Onpage SEO     |
+       |---------------------------| -->
+
+    <!-- this is title -->
+    <title>Examination Result</title>
+    <!-- Keyword -->
+    <meta name="Keyword" content="">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+
+    <!--  |---------------------------|
+       |    All Css File Here      |
+       |---------------------------| -->
+
+    <!-- css for bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- css for Fontawesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- my css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!-- JavaScript Part  -->
+<script type="text/javascript">
+    // For Second Row : Bangla 1st paper 
+    function total_mark1() {
+        var theory_mark1 = parseInt(document.getElementById('theorymark1').value);
+        var practical_mark1 = parseInt(document.getElementById('practicalmark1').value);
+        var total_mark1 = theory_mark1 + practical_mark1;
+        document.getElementById('totalmark1').value = total_mark1;
+
+        if (total_mark1 >= 80 && total_mark1 <= 100) {
+            document.getElementById('grade1').value = "A+";
+            document.getElementById('point1').value = "5.00";
+        }
+        else if (total_mark1 >= 70 && total_mark1 <= 79) {
+            document.getElementById('grade1').value = "A";
+            document.getElementById('point1').value = "4.00";
+        }
+        else if (total_mark1 >= 60 && total_mark1 <= 69) {
+            document.getElementById('grade1').value = "A-";
+            document.getElementById('point1').value = "3.50";
+        }
+        else if (total_mark1 >= 50 && total_mark1 <= 59) {
+            document.getElementById('grade1').value = "B";
+            document.getElementById('point1').value = "3.00";
+        }
+        else if (total_mark1 >= 40 && total_mark1 <= 49) {
+            document.getElementById('grade1').value = "C";
+            document.getElementById('point1').value = "2.00";
+        }
+        else if (total_mark1 >= 33 && total_mark1 <= 39) {
+            document.getElementById('grade1').value = "D";
+            document.getElementById('point1').value = "1.00";
+        }
+        else if (total_mark1 >= 0 && total_mark1 <= 32) {
+            document.getElementById('grade1').value = "F";
+            document.getElementById('point1').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Third Row : Bangla 2nd paper 
+    function total_mark2() {
+        var theory_mark2 = parseInt(document.getElementById('theorymark2').value);
+        var practical_mark2 = parseInt(document.getElementById('practicalmark2').value);
+        var total_mark2 = theory_mark2 + practical_mark2;
+        document.getElementById('totalmark2').value = total_mark2;
+
+        if (total_mark2 >= 80 && total_mark2 <= 100) {
+            document.getElementById('grade2').value = "A+";
+            document.getElementById('point2').value = "5.00";
+        }
+        else if (total_mark2 >= 70 && total_mark2 <= 79) {
+            document.getElementById('grade2').value = "A";
+            document.getElementById('point2').value = "4.00";
+        }
+        else if (total_mark2 >= 60 && total_mark2 <= 69) {
+            document.getElementById('grade2').value = "A-";
+            document.getElementById('point2').value = "3.50";
+        }
+        else if (total_mark2 >= 50 && total_mark2 <= 59) {
+            document.getElementById('grade2').value = "B";
+            document.getElementById('point2').value = "3.00";
+        }
+        else if (total_mark2 >= 40 && total_mark2 <= 49) {
+            document.getElementById('grade2').value = "C";
+            document.getElementById('point2').value = "2.00";
+        }
+        else if (total_mark2 >= 33 && total_mark2 <= 39) {
+            document.getElementById('grade2').value = "D";
+            document.getElementById('point2').value = "1.00";
+        }
+        else if (total_mark2 >= 0 && total_mark2 <= 32) {
+            document.getElementById('grade2').value = "F";
+            document.getElementById('point2').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Forth Row : English 1st paper 
+    function total_mark3() {
+        var theory_mark3 = parseInt(document.getElementById('theorymark3').value);
+        var practical_mark3 = parseInt(document.getElementById('practicalmark3').value);
+        var total_mark3 = theory_mark3 + practical_mark3;
+        document.getElementById('totalmark3').value = total_mark3;
+
+        if (total_mark3 >= 80 && total_mark3 <= 100) {
+            document.getElementById('grade3').value = "A+";
+            document.getElementById('point3').value = "5.00";
+        }
+        else if (total_mark3 >= 70 && total_mark3 <= 79) {
+            document.getElementById('grade3').value = "A";
+            document.getElementById('point3').value = "4.00";
+        }
+        else if (total_mark3 >= 60 && total_mark3 <= 69) {
+            document.getElementById('grade3').value = "A-";
+            document.getElementById('point3').value = "3.50";
+        }
+        else if (total_mark3 >= 50 && total_mark3 <= 59) {
+            document.getElementById('grade3').value = "B";
+            document.getElementById('point3').value = "3.00";
+        }
+        else if (total_mark3 >= 40 && total_mark3 <= 49) {
+            document.getElementById('grade3').value = "C";
+            document.getElementById('point3').value = "2.00";
+        }
+        else if (total_mark3 >= 33 && total_mark3 <= 39) {
+            document.getElementById('grade3').value = "D";
+            document.getElementById('point3').value = "1.00";
+        }
+        else if (total_mark3 >= 0 && total_mark3 <= 32) {
+            document.getElementById('grade3').value = "F";
+            document.getElementById('point3').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For fifth Row : English 2nd paper 
+    function total_mark4() {
+        var theory_mark4 = parseInt(document.getElementById('theorymark4').value);
+        var practical_mark4 = parseInt(document.getElementById('practicalmark4').value);
+        var total_mark4 = theory_mark4 + practical_mark4;
+        document.getElementById('totalmark4').value = total_mark4;
+
+        if (total_mark4 >= 80 && total_mark4 <= 100) {
+            document.getElementById('grade4').value = "A+";
+            document.getElementById('point4').value = "5.00";
+        }
+        else if (total_mark4 >= 70 && total_mark4 <= 79) {
+            document.getElementById('grade4').value = "A";
+            document.getElementById('point4').value = "4.00";
+        }
+        else if (total_mark4 >= 60 && total_mark4 <= 69) {
+            document.getElementById('grade4').value = "A-";
+            document.getElementById('point4').value = "3.50";
+        }
+        else if (total_mark4 >= 50 && total_mark4 <= 59) {
+            document.getElementById('grade4').value = "B";
+            document.getElementById('point4').value = "3.00";
+        }
+        else if (total_mark4 >= 40 && total_mark4 <= 49) {
+            document.getElementById('grade4').value = "C";
+            document.getElementById('point4').value = "2.00";
+        }
+        else if (total_mark4 >= 33 && total_mark4 <= 39) {
+            document.getElementById('grade4').value = "D";
+            document.getElementById('point4').value = "1.00";
+        }
+        else if (total_mark4 >= 0 && total_mark4 <= 32) {
+            document.getElementById('grade4').value = "F";
+            document.getElementById('point4').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Sixth Row : Mathematics 
+    function total_mark5() {
+        var theory_mark5 = parseInt(document.getElementById('theorymark5').value);
+        var practical_mark5 = parseInt(document.getElementById('practicalmark5').value);
+        var total_mark5 = theory_mark5 + practical_mark5;
+        document.getElementById('totalmark5').value = total_mark5;
+
+        if (total_mark5 >= 80 && total_mark5 <= 100) {
+            document.getElementById('grade5').value = "A+";
+            document.getElementById('point5').value = "5.00";
+        }
+        else if (total_mark5 >= 70 && total_mark5 <= 79) {
+            document.getElementById('grade5').value = "A";
+            document.getElementById('point5').value = "4.00";
+        }
+        else if (total_mark5 >= 60 && total_mark5 <= 69) {
+            document.getElementById('grade5').value = "A-";
+            document.getElementById('point5').value = "3.50";
+        }
+        else if (total_mark5 >= 50 && total_mark5 <= 59) {
+            document.getElementById('grade5').value = "B";
+            document.getElementById('point5').value = "3.00";
+        }
+        else if (total_mark5 >= 40 && total_mark5 <= 49) {
+            document.getElementById('grade5').value = "C";
+            document.getElementById('point5').value = "2.00";
+        }
+        else if (total_mark5 >= 33 && total_mark5 <= 39) {
+            document.getElementById('grade5').value = "D";
+            document.getElementById('point5').value = "1.00";
+        }
+        else if (total_mark5 >= 0 && total_mark5 <= 32) {
+            document.getElementById('grade5').value = "F";
+            document.getElementById('point5').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Sixth Row : Physics 
+    function total_mark6() {
+        var theory_mark6 = parseInt(document.getElementById('theorymark6').value);
+        var practical_mark6 = parseInt(document.getElementById('practicalmark6').value);
+        var total_mark6 = theory_mark6 + practical_mark6;
+        document.getElementById('totalmark6').value = total_mark6;
+
+        if (total_mark6 >= 80 && total_mark6 <= 100) {
+            document.getElementById('grade6').value = "A+";
+            document.getElementById('point6').value = "5.00";
+        }
+        else if (total_mark6 >= 70 && total_mark6 <= 79) {
+            document.getElementById('grade6').value = "A";
+            document.getElementById('point6').value = "4.00";
+        }
+        else if (total_mark6 >= 60 && total_mark6 <= 69) {
+            document.getElementById('grade6').value = "A-";
+            document.getElementById('point6').value = "3.50";
+        }
+        else if (total_mark6 >= 50 && total_mark6 <= 59) {
+            document.getElementById('grade6').value = "B";
+            document.getElementById('point6').value = "3.00";
+        }
+        else if (total_mark6 >= 40 && total_mark6 <= 49) {
+            document.getElementById('grade6').value = "C";
+            document.getElementById('point6').value = "2.00";
+        }
+        else if (total_mark6 >= 33 && total_mark6 <= 39) {
+            document.getElementById('grade6').value = "D";
+            document.getElementById('point6').value = "1.00";
+        }
+        else if (total_mark6 >= 0 && total_mark6 <= 32) {
+            document.getElementById('grade6').value = "F";
+            document.getElementById('point6').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Seven-th Row : Chemistry
+    function total_mark7() {
+        var theory_mark7 = parseInt(document.getElementById('theorymark7').value);
+        var practical_mark7 = parseInt(document.getElementById('practicalmark7').value);
+        var total_mark7 = theory_mark7 + practical_mark7;
+        document.getElementById('totalmark7').value = total_mark7;
+
+        if (total_mark7 >= 80 && total_mark7 <= 100) {
+            document.getElementById('grade7').value = "A+";
+            document.getElementById('point7').value = "5.00";
+        }
+        else if (total_mark7 >= 70 && total_mark7 <= 79) {
+            document.getElementById('grade7').value = "A";
+            document.getElementById('point7').value = "4.00";
+        }
+        else if (total_mark7 >= 60 && total_mark7 <= 69) {
+            document.getElementById('grade7').value = "A-";
+            document.getElementById('point7').value = "3.50";
+        }
+        else if (total_mark7 >= 50 && total_mark7 <= 59) {
+            document.getElementById('grade7').value = "B";
+            document.getElementById('point7').value = "3.00";
+        }
+        else if (total_mark7 >= 40 && total_mark7 <= 49) {
+            document.getElementById('grade7').value = "C";
+            document.getElementById('point7').value = "2.00";
+        }
+        else if (total_mark7 >= 33 && total_mark7 <= 39) {
+            document.getElementById('grade7').value = "D";
+            document.getElementById('point7').value = "1.00";
+        }
+        else if (total_mark7 >= 0 && total_mark7 <= 32) {
+            document.getElementById('grade7').value = "F";
+            document.getElementById('point7').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Eight-th Row : Biology
+    function total_mark8() {
+        var theory_mark8 = parseInt(document.getElementById('theorymark8').value);
+        var practical_mark8 = parseInt(document.getElementById('practicalmark8').value);
+        var total_mark8 = theory_mark8 + practical_mark8;
+        document.getElementById('totalmark8').value = total_mark8;
+
+        if (total_mark8 >= 80 && total_mark8 <= 100) {
+            document.getElementById('grade8').value = "A+";
+            document.getElementById('point8').value = "5.00";
+        }
+        else if (total_mark8 >= 70 && total_mark8 <= 79) {
+            document.getElementById('grade8').value = "A";
+            document.getElementById('point8').value = "4.00";
+        }
+        else if (total_mark8 >= 60 && total_mark8 <= 69) {
+            document.getElementById('grade8').value = "A-";
+            document.getElementById('point8').value = "3.50";
+        }
+        else if (total_mark8 >= 50 && total_mark8 <= 59) {
+            document.getElementById('grade8').value = "B";
+            document.getElementById('point8').value = "3.00";
+        }
+        else if (total_mark8 >= 40 && total_mark8 <= 49) {
+            document.getElementById('grade8').value = "C";
+            document.getElementById('point8').value = "2.00";
+        }
+        else if (total_mark8 >= 33 && total_mark8 <= 39) {
+            document.getElementById('grade8').value = "D";
+            document.getElementById('point8').value = "1.00";
+        }
+        else if (total_mark8 >= 0 && total_mark8 <= 32) {
+            document.getElementById('grade8').value = "F";
+            document.getElementById('point8').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Nine-th Row : Islam Shikkha
+    function total_mark9() {
+        var theory_mark9 = parseInt(document.getElementById('theorymark9').value);
+        var practical_mark9 = parseInt(document.getElementById('practicalmark9').value);
+        var total_mark9 = theory_mark9 + practical_mark9;
+        document.getElementById('totalmark9').value = total_mark9;
+
+        if (total_mark9 >= 80 && total_mark9 <= 100) {
+            document.getElementById('grade9').value = "A+";
+            document.getElementById('point9').value = "5.00";
+        }
+        else if (total_mark9 >= 70 && total_mark9 <= 79) {
+            document.getElementById('grade9').value = "A";
+            document.getElementById('point9').value = "4.00";
+        }
+        else if (total_mark9 >= 60 && total_mark9 <= 69) {
+            document.getElementById('grade9').value = "A-";
+            document.getElementById('point9').value = "3.50";
+        }
+        else if (total_mark9 >= 50 && total_mark9 <= 59) {
+            document.getElementById('grade9').value = "B";
+            document.getElementById('point9').value = "3.00";
+        }
+        else if (total_mark9 >= 40 && total_mark9 <= 49) {
+            document.getElementById('grade9').value = "C";
+            document.getElementById('point9').value = "2.00";
+        }
+        else if (total_mark9 >= 33 && total_mark9 <= 39) {
+            document.getElementById('grade9').value = "D";
+            document.getElementById('point9').value = "1.00";
+        }
+        else if (total_mark9 >= 0 && total_mark9 <= 32) {
+            document.getElementById('grade9').value = "F";
+            document.getElementById('point9').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For ten-th Row : Social Science
+    function total_mark10() {
+        var theory_mark10 = parseInt(document.getElementById('theorymark10').value);
+        var practical_mark10 = parseInt(document.getElementById('practicalmark10').value);
+        var total_mark10 = theory_mark10 + practical_mark10;
+        document.getElementById('totalmark10').value = total_mark10;
+
+        if (total_mark10 >= 80 && total_mark10 <= 100) {
+            document.getElementById('grade10').value = "A+";
+            document.getElementById('point10').value = "5.00";
+        }
+        else if (total_mark10 >= 70 && total_mark10 <= 79) {
+            document.getElementById('grade10').value = "A";
+            document.getElementById('point10').value = "4.00";
+        }
+        else if (total_mark10 >= 60 && total_mark10 <= 69) {
+            document.getElementById('grade10').value = "A-";
+            document.getElementById('point10').value = "3.50";
+        }
+        else if (total_mark10 >= 50 && total_mark10 <= 59) {
+            document.getElementById('grade10').value = "B";
+            document.getElementById('point10').value = "3.00";
+        }
+        else if (total_mark10 >= 40 && total_mark10 <= 49) {
+            document.getElementById('grade10').value = "C";
+            document.getElementById('point10').value = "2.00";
+        }
+        else if (total_mark10 >= 33 && total_mark10 <= 39) {
+            document.getElementById('grade10').value = "D";
+            document.getElementById('point10').value = "1.00";
+        }
+        else if (total_mark10 >= 0 && total_mark10 <= 32) {
+            document.getElementById('grade10').value = "F";
+            document.getElementById('point10').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    // For Eleven-th Row : Computer
+    function total_mark11() {
+        var theory_mark11 = parseInt(document.getElementById('theorymark11').value);
+        var practical_mark11 = parseInt(document.getElementById('practicalmark11').value);
+        var total_mark11 = theory_mark11 + practical_mark11;
+        document.getElementById('totalmark11').value = total_mark11;
+
+        if (total_mark11 >= 80 && total_mark11 <= 100) {
+            document.getElementById('grade11').value = "A+";
+            document.getElementById('point11').value = "5.00";
+        }
+        else if (total_mark11 >= 70 && total_mark11 <= 79) {
+            document.getElementById('grade11').value = "A";
+            document.getElementById('point11').value = "4.00";
+        }
+        else if (total_mark11 >= 60 && total_mark11 <= 69) {
+            document.getElementById('grade11').value = "A-";
+            document.getElementById('point11').value = "3.50";
+        }
+        else if (total_mark11 >= 50 && total_mark11 <= 59) {
+            document.getElementById('grade11').value = "B";
+            document.getElementById('point11').value = "3.00";
+        }
+        else if (total_mark11 >= 40 && total_mark11 <= 49) {
+            document.getElementById('grade11').value = "C";
+            document.getElementById('point11').value = "2.00";
+        }
+        else if (total_mark11 >= 33 && total_mark11 <= 39) {
+            document.getElementById('grade11').value = "D";
+            document.getElementById('point11').value = "1.00";
+        }
+        else if (total_mark11 >= 0 && total_mark11 <= 32) {
+            document.getElementById('grade11').value = "F";
+            document.getElementById('point11').value = "0.00";
+        }
+        else {
+            alert("Wrong Input");
+        }
+    }
+
+    //total Marks
+    function total_marks(){
+        totalmarks=parseInt(document.getElementById('totalmark1').value) +
+        parseInt(document.getElementById('totalmark2').value)+
+        parseInt(document.getElementById('totalmark3').value)+
+        parseInt(document.getElementById('totalmark4').value)+
+        parseInt(document.getElementById('totalmark5').value)+
+        parseInt(document.getElementById('totalmark6').value)+
+        parseInt(document.getElementById('totalmark7').value)+
+        parseInt(document.getElementById('totalmark8').value)+
+        parseInt(document.getElementById('totalmark9').value)+
+        parseInt(document.getElementById('totalmark10').value)+
+        parseInt(document.getElementById('totalmark11').value);
+
+        document.getElementById('totalmark').value=totalmarks;
+
+    }
+    //total points
+    function total_points(){
+        totalpoints=parseFloat(document.getElementById('point1').value) +
+        parseFloat(document.getElementById('point2').value)+
+        parseFloat(document.getElementById('point3').value)+
+        parseFloat(document.getElementById('point4').value)+
+        parseFloat(document.getElementById('point5').value)+
+        parseFloat(document.getElementById('point6').value)+
+        parseFloat(document.getElementById('point7').value)+
+        parseFloat(document.getElementById('point8').value)+
+        parseFloat(document.getElementById('point9').value)+
+        parseFloat(document.getElementById('point10').value)+
+        parseFloat(document.getElementById('point11').value);
+
+        document.getElementById('totalpoint').value=parseFloat(totalpoints);
+    }
+    
+    //total grade
+    function total_grades(){
+        totalgrades=(document.getElementById('totalpoint').value)/11;
+
+        document.getElementById('totalgrade').value=parseFloat(totalgrades);
+    }
+    
+    
+</script>
+
+
+
+
+
+
+
+
+
+<!-- Body Part  -->
+
+<body>
+    <table class="table table-md my-5">
+        <thead>
+            <!-- Table 1st Row  -->
+            <tr>
+                <th>Subject Name</th>
+                <th>Theory Mark</th>
+                <th>Practical Mark</th>
+                <th>Total Mark</th>
+                <th>Point</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table 2nd Row  -->
+            <tr>
+                <th>Bangla 1st Paper</th>
+                <td><input type="text" id="theorymark1"></td>
+                <td><input type="text" id="practicalmark1"></td>
+                <td><input type="text" id="totalmark1"></td>
+                <td><input type="text" id="point1"></td>
+                <td><input type="text" id="grade1"></td>
+                <td><Button onclick="total_mark1()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            <!-- Table 3rd Row  -->
+            <tr>
+                <th>Bangla 2nd Paper</th>
+                <td><input type="text" id="theorymark2"></td>
+                <td><input type="text" id="practicalmark2"></td>
+                <td><input type="text" id="totalmark2"></td>
+                <td><input type="text" id="point2"></td>
+                <td><input type="text" id="grade2"></td>
+                <td><Button onclick="total_mark2()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <!-- Table 4th Row  -->
+            <tr>
+                <th>English 1st Paper</th>
+                <td><input type="text" id="theorymark3"></td>
+                <td><input type="text" id="practicalmark3"></td>
+                <td><input type="text" id="totalmark3"></td>
+                <td><input type="text" id="point3"></td>
+                <td><input type="text" id="grade3"></td>
+                <td><Button onclick="total_mark3()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <!-- Table 5th Row  -->
+            <tr>
+                <th>English 2nd Paper</th>
+                <td><input type="text" id="theorymark4"></td>
+                <td><input type="text" id="practicalmark4"></td>
+                <td><input type="text" id="totalmark4"></td>
+                <td><input type="text" id="point4"></td>
+                <td><input type="text" id="grade4"></td>
+                <td><Button onclick="total_mark4()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Mathematics</th>
+                <td><input type="text" id="theorymark5"></td>
+                <td><input type="text" id="practicalmark5"></td>
+                <td><input type="text" id="totalmark5"></td>
+                <td><input type="text" id="point5"></td>
+                <td><input type="text" id="grade5"></td>
+                <td><Button onclick="total_mark5()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Physics</th>
+                <td><input type="text" id="theorymark6"></td>
+                <td><input type="text" id="practicalmark6"></td>
+                <td><input type="text" id="totalmark6"></td>
+                <td><input type="text" id="point6"></td>
+                <td><input type="text" id="grade6"></td>
+                <td><Button onclick="total_mark6()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Chemistry</th>
+                <td><input type="text" id="theorymark7"></td>
+                <td><input type="text" id="practicalmark7"></td>
+                <td><input type="text" id="totalmark7"></td>
+                <td><input type="text" id="point7"></td>
+                <td><input type="text" id="grade7"></td>
+                <td><Button onclick="total_mark7()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Biology</th>
+                <td><input type="text" id="theorymark8"></td>
+                <td><input type="text" id="practicalmark8"></td>
+                <td><input type="text" id="totalmark8"></td>
+                <td><input type="text" id="point8"></td>
+                <td><input type="text" id="grade8"></td>
+                <td><Button onclick="total_mark8()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Islam Shikkha</th>
+                <td><input type="text" id="theorymark9"></td>
+                <td><input type="text" id="practicalmark9"></td>
+                <td><input type="text" id="totalmark9"></td>
+                <td><input type="text" id="point9"></td>
+                <td><input type="text" id="grade9"></td>
+                <td><Button onclick="total_mark9()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>Social Science</th>
+                <td><input type="text" id="theorymark10"></td>
+                <td><input type="text" id="practicalmark10"></td>
+                <td><input type="text" id="totalmark10"></td>
+                <td><input type="text" id="point10"></td>
+                <td><input type="text" id="grade10"></td>
+                <td><Button onclick="total_mark10()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            <tr>
+                <th>Computer</th>
+                <td><input type="text" id="theorymark11"></td>
+                <td><input type="text" id="practicalmark11"></td>
+                <td><input type="text" id="totalmark11"></td>
+                <td><input type="text" id="point11"></td>
+                <td><input type="text" id="grade11"></td>
+                <td><Button onclick="total_mark11()" class="btn btn-primary">Result</Button></td>
+            </tr>
+            <tr>
+                <th>Total Mark Calculation</th>
+                <td></td>
+                <td></td>
+                <td><input type="text" id="totalmark"></td>
+                <td><input type="text" id="totalpoint"></td>
+                <td><input type="text" id="totalgrade"></td>
+                <td><Button onclick="total_marks(),total_points(),total_grades()" class="btn btn-primary">Result</Button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
